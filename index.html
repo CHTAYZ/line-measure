@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çizgi Uzunluğu Hesaplama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Çizgi Uzunluğu Hesaplama</h1>
+    <form id="lineForm">
+        <div>
+            <label for="x1">Birinci Nokta X:</label>
+            <input type="number" id="x1" name="x1" required>
+        </div>
+        <div>
+            <label for="y1">Birinci Nokta Y:</label>
+            <input type="number" id="y1" name="y1" required>
+        </div>
+        <div>
+            <label for="x2">İkinci Nokta X:</label>
+            <input type="number" id="x2" name="x2" required>
+        </div>
+        <div>
+            <label for="y2">İkinci Nokta Y:</label>
+            <input type="number" id="y2" name="y2" required>
+        </div>
+        <button type="button" onclick="calculateDistance()">Hesapla</button>
+    </form>
+    <h2>Çizgi Uzunluğu: <span id="result">0</span></h2>
+    <script src="script.js"></script>
+</body>
+</html>
